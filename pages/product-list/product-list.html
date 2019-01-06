@@ -1,0 +1,47 @@
+<ion-header>
+
+	<ion-navbar>
+		<ion-title>product_list</ion-title>
+	</ion-navbar>
+
+</ion-header>
+
+
+
+
+
+
+<ion-content no-padding no-margin class="card-background-page">
+	<ion-list no-padding no-margin>
+		<ion-grid>
+			
+			<ion-row no-padding no-margin *ngFor="let i of currentItems;let odd = odd; let even = even;">
+				<ion-col *ngFor="let item of row | slice:(i*2):(i+1)*2">
+					<!--<ion-row *ngFor="let row of grid">
+    				<ion-col width-50 *ngFor="let item of row">
+      -->
+					<div class="product-card">
+						<img class="product-img" [src]="item.image_url" />
+						<div no-padding no-margin class="product-detail">
+							<div class="card-title">{{ item.name }}</div>
+							<div class="card-subtitle"> {{ item.regular_price_with_tax }} </div>
+							<!--<div>even {{ even }}</div>-->
+						</div>
+					</div>
+				</ion-col>
+
+				
+				<!--<ion-col *ngIf="odd">
+					
+						<img class="product-img" [src]="item.image_url" />
+						<div no-padding no-margin class="product-detail">
+							<div class="card-title">{{ item.name }}</div>
+							<div class="card-subtitle"> {{ item.regular_price_with_tax }} </div>
+							<div>odd {{ odd }}</div>
+						</div>
+					
+				</ion-col>-->
+			</ion-row>
+		</ion-grid>
+	</ion-list>
+</ion-content>

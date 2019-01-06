@@ -1,0 +1,94 @@
+page-product-detail {
+
+    // $toolbar-md-title-text-align : center;
+    // $toolbar-md-title-font-size:10px;
+
+    //header 
+
+    //main content 
+    ion-content {
+        .layout{
+             background-color: #4b6669;
+        }
+        .content{
+            background-color: #4b6669;
+        }
+       
+    }
+  .content{
+            background-color: #4b6669;
+        }
+
+ion-slides{ 
+
+
+
+      height: 250px;
+  }
+
+  .product{
+      text-align: center;
+      //color: $appskin;
+  }
+
+  .toolbar-background{
+        //border-color: ;
+        background: #28a6ad;
+  }
+
+  //card 
+  ion-card-header{
+      font-weight: bold;
+  }
+
+  //pop over alert select 
+  ion-alert{
+
+
+
+      .alert-md .alert-wrapper{
+           background: yellow;
+      }
+
+      .alert-wrapper{
+           background: red;
+      }
+      .alert{
+          background: red;
+      }
+
+
+      .alert-wrapper{
+        .alert-head{
+            background: greenyellow;
+            }
+      }
+  }
+  
+
+   .alert-wrapper{
+           background: red;
+      }
+
+
+      .alert{
+          background: yellow;
+      }
+
+      .alert-md .alert-wrapper{
+           background: yellow;
+      }
+
+      .alert-head{
+          background: green;
+      }
+
+
+
+
+
+  
+
+}
+
+

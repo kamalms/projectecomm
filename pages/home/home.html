@@ -1,0 +1,88 @@
+<!--<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Home</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <h3>Ionic Menu Starter</h3>
+
+  <p>
+    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.
+  </p>
+ <div>{{ 'HELLO' | translate:param }}</div>
+  <button ion-button secondary menuToggle>Toggle Menu</button>
+</ion-content>-->
+
+<ion-header>
+	<ion-navbar>
+     <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+		<ion-title>Home</ion-title>
+	</ion-navbar>
+
+
+
+</ion-header>
+<ion-content no-padding>
+	<ion-slides #slides1 pager="true" dir="{{dir}}" (ionSlideWillChange)="onSlideChangeStart($event)">
+		<ion-slide *ngFor="let slide of slides">
+			<img [src]="slide.image_url" class="slide-image" />
+		</ion-slide>
+	</ion-slides>
+
+
+
+
+
+	<ion-card (click)="cardTapped(card)">
+		<img src="assets/img/card/card-saopaolo.png" />
+		<div style="">
+			<div class="card-title">50% OFF</div>
+			<div class="card-subtitle">entire collection</div>
+			<div style="padding-left: 31px;">
+				<button float-right ion-button outline class="offer-btn" color="white">Shop Now</button>
+			</div>
+		</div>
+	</ion-card>
+
+
+	<!--<p padding>
+		Equal-width columns
+	</p>-->
+
+	<ion-grid no-padding>
+		<!--{{ categories | json}}-->
+		<ion-row>
+			<ion-col col-4 *ngFor="let cat of categories" style="padding-right: 0;
+    padding-left: 3px;">
+				<div>
+				
+
+					<img class="cat-img" [src]="cat.image_url" />
+					<div class="cat-name">{{cat.name}}</div>
+				</div>
+			</ion-col>
+		</ion-row>
+
+	</ion-grid>
+
+
+
+  	<ion-slides id="bestSeller" [slidesPerView]="'auto'" #mySlider>
+		<ion-slide *ngFor="let slide of slides">
+			<div>
+				<img [src]="slide.image_url" class="slide-image" />
+				<h6 ion-text>Black Forest Half</h6>
+				<i  color="black" style="text-decoration: line-through;">$350.00</i>
+        <i ion-text color="primary">$250.00</i>
+			</div>  
+		</ion-slide>
+		<ion-slide>
+		</ion-slide>
+	</ion-slides>
+</ion-content>

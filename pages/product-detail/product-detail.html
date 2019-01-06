@@ -1,0 +1,56 @@
+<ion-header>
+
+	<ion-navbar>
+     <ion-buttons end>
+      <button ion-button icon-only>
+        <ion-icon name="cart"></ion-icon>
+      </button>
+    </ion-buttons>
+		<ion-title>product-detail</ion-title>
+	</ion-navbar>
+
+</ion-header>
+<ion-content class="layout">
+	<ion-slides #slides1 pager="true" dir="{{dir}}">
+		<!--{{ slides | json}}-->
+		<ion-slide *ngFor="let slide of slides">
+			<img [src]="slide.image" class="slide-image" />
+		</ion-slide>
+	</ion-slides>
+
+	<ion-card>
+		<ion-card-header text-center>
+			Product Name
+		</ion-card-header>
+		<ion-card-content>
+			<div class="product">
+				<h2>Short Name</h2>
+				<div> $50 </div>
+			</div>
+			The British use the term "header", but the American term "head-shot" the English simply refuse to adopt.
+		</ion-card-content>
+	</ion-card>
+
+  
+
+  <ion-item margin>
+    <ion-label>Gaming</ion-label>
+    <ion-select [(ngModel)]="gaming">
+      <ion-option value="nes">NES</ion-option>
+      <ion-option value="n64">Nintendo64</ion-option>
+      <ion-option value="ps">PlayStation</ion-option>
+      <ion-option value="genesis">Sega Genesis</ion-option>
+      <ion-option value="saturn">Sega Saturn</ion-option>
+      <ion-option value="snes">SNES</ion-option>
+    </ion-select>
+  </ion-item>
+
+
+
+
+
+
+
+
+
+</ion-content>

@@ -1,0 +1,133 @@
+page-home {
+// page-homepage {
+
+  ion-slides{ 
+
+      height: 200px;
+  }
+//   .scroll-content{
+
+//   }
+
+// h1{
+//       min-height: 150px;
+//       // height: 100px;
+//       background-color: #ccc;
+//       text-align: center;
+//      // line-height: 200px;
+//     }
+//     ion-img{
+//          min-height: 150px;
+//       // height: 100px;
+//       background-color: #ccc;
+//       text-align: center;
+//     }
+//     .leftRs {
+//         // position: absolute;
+//         // margin: auto;
+//         // top: 0;
+//         // bottom: 0;
+//         width: 50px;
+//         height: 50px;
+//         box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
+//         border-radius: 999px;
+//         // left: 0;
+//         // display: none;
+//         display:inline;
+//     }
+
+//     .rightRs {
+//         // position: absolute;
+//         // margin: auto;
+//         // top: 0;
+//         // bottom: 0;
+//         width: 50px;
+//         height: 50px;
+//         box-shadow: 1px 2px 10px -1px rgba(0, 0, 0, .3);
+//         border-radius: 999px;
+//        // right: 0;
+        
+//              }
+
+//     #offer-banner1 {
+//                 margin:0 auto;
+
+//     }
+
+ion-card {
+    position: relative;
+    text-align: center;
+    height: 15%;
+  }
+  .card-title {
+   position: absolute;
+    top: 30%;
+    font-size: 2.0em;
+    /* width: 100%; */
+    font-weight: bold;
+    color: #fff;
+    left: 12%;
+  }
+  .card-subtitle {
+        font-size: 1em;
+    position: absolute;
+    top: 55%;
+    /* width: 100%; */
+    color: #fff;
+    left: 13%;
+    padding: 9px 0;
+
+  }
+  .offer-btn {
+      position: absolute;
+      top: 30%;
+      width:30%;
+  }
+
+#bestSeller{
+ion-slide {
+    width: 150px !important;
+    height: 150px !important;
+
+    // margin-right: -18px;
+    // margin-left: 18px;
+    .slide-zoom {
+      //  padding: 10px;
+   // border-left: 1px solid green;
+      border-right: 1px solid grey;
+     }
+  }
+
+  ion-slide:first-child {
+    margin-left: 0;
+  }
+
+  ion-slide:last-child {
+    margin-right: 0;
+  }
+  }
+ion-content {
+  ion-grid {
+    position: relative;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+
+  }
+  .cat-name {
+    color: green;
+      font-size: 1em;
+    position: absolute;
+  bottom: 8px;
+  right: 16px;
+  }
+  .cat-img{
+    width: 100px;
+    height: 100px;
+    opacity: 0.7;
+  }
+}
+
+  
+}
+
+// }
